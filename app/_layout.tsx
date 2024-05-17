@@ -42,7 +42,14 @@ export default function RootLayout() {
           name="(screens)/mainLayout/stock"
           options={{ headerShown: true, title: "Search..." }}
         />
-
+        <Stack.Screen
+          name="(screens)/mainLayout/stockDetails"
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="(screens)/mainLayout/checkout"
+          options={{ headerShown: false }}
+        />
         <Stack.Screen name="+not-found" />
       </Stack>
     </ThemeProvider>

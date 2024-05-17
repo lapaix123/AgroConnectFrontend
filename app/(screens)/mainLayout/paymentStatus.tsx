@@ -1,15 +1,14 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
-import FoodDetails from "../(screens)/mainLayout/foodDetails";
 
-const Cart = () => {
+const PaymentStatus = () => {
   return (
     <View>
-      <FoodDetails />
+      <Text>paymentStatus</Text>
     </View>
   );
 };
 
-export default Cart;
+export default PaymentStatus;
 
 const styles = StyleSheet.create({});
