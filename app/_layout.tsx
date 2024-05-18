@@ -50,6 +50,20 @@ export default function RootLayout() {
           name="(screens)/mainLayout/checkout"
           options={{ headerShown: false }}
         />
+        <Stack.Screen
+          name="(screens)/mainLayout/paymentStatus"
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen name="(screens)/index" options={{ headerShown: false }} />
+
+        <Stack.Screen
+          name="(screens)/auth/login"
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="(screens)/mainLayout/rateApp"
+          options={{ headerShown: false }}
+        />
         <Stack.Screen name="+not-found" />
       </Stack>
     </ThemeProvider>

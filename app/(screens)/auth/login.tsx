@@ -19,7 +19,7 @@ const Login = () => {
   return (
     <View className="w-full ">
       <View className=" h-40 bg-[#F7951C]"></View>
-      <View className="rounded-t-3xl bg-white absolute top-32 px-4 py-8 ">
+      <View className="rounded-t-3xl h-screen bg-white absolute top-32 px-4 py-8 ">
         <View className="flex flex-row justify-center py-4">
           <Text className="text-black font-extrabold text-3xl">Supa</Text>
           <Text className="text-[#F7951C] font-extrabold text-3xl">Menu</Text>

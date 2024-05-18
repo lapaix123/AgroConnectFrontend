@@ -80,7 +80,7 @@ const Checkout = () => {
       <Button
         mode="contained"
         icon="lock"
-        onPress={() => router.push("(screens)/mainLayout/stock")}
+        onPress={() => router.push("(screens)/mainLayout/paymentStatus")}
         style={{
           backgroundColor: "#34d48b",
           justifyContent: "center",
