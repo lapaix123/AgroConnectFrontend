@@ -44,7 +44,7 @@ const Login = () => {
             />
           </View>
           <View className="py-3">
-            <CustomButton href="" buttonText="Sign In" />
+            <CustomButton href="(tabs)" buttonText="Sign In" />
           </View>
           <View className="flex flex-row items-center gap-x-2">
             <View className="h-[1px] w-[45%] bg-gray-200"></View>
