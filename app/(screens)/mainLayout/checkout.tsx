@@ -1,18 +1,24 @@
-import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Image, StyleSheet, TouchableOpacity } from "react-native";
 import React, { useState } from "react";
 import { AntDesign } from "@expo/vector-icons";
 import card from "@/assets/images/card.png";
 import { paymentData } from "./utils/data.dummy";
 import { Button } from "react-native-paper";
 import { router } from "expo-router";
+import { useGoBack } from "@/hooks/useGoback";
+import { View } from "@/components/View";
+import { Text } from "@/components/Text";
 const Checkout = () => {
   const [isCreditCardPressed, setIsCreditCardPressed] = useState(true);
   const [isMobileCashPressed, setIsMobileCashPressed] = useState(false);
-
+  const goBack = useGoBack();
   return (
     <View className="">
-      <View className="h-64 w-[96%] bg-white shadow-lg shadow-[#d4f4e5] rounded-3xl px-6">
-        <TouchableOpacity className="bg-gray-100 rounded-xl h-12 w-12 justify-center items-center mt-14">
+      <View className="h-64 w-[96%] shadow-lg shadow-[#d4f4e5] rounded-3xl px-6">
+        <TouchableOpacity
+          className="bg-gray-100 rounded-xl h-12 w-12 justify-center items-center mt-14"
+          onPress={goBack}
+        >
           <AntDesign name="left" size={24} color="#34d48b" />
         </TouchableOpacity>
         <View className="flex flex-row justify-between py-4">

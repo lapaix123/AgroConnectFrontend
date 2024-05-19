@@ -1,7 +1,9 @@
+import { ThemeProps, useThemeColor } from "@/hooks/useThemeColor";
 import React from "react";
 import TextInput from "react-native-paper/src/components/TextInput/TextInput";
 
-interface FormInputProps {
+export type TextInputProps = ThemeProps;
+interface FormInputProps extends TextInputProps {
   label: string;
   type?: string;
   required?: boolean;
@@ -19,20 +21,29 @@ const CustomInput: React.FC<FormInputProps> = ({
   value,
   onChangeText,
   secureTextEntry,
-
+  lightColor,
+  darkColor,
   right,
   left,
   ...otherProps
 }) => {
+  const backgroundColor = useThemeColor(
+    { light: lightColor, dark: darkColor },
+    "background"
+  );
+  const textColor = useThemeColor(
+    { light: lightColor, dark: darkColor },
+    "text"
+  );
   return (
     <TextInput
       style={{
-        backgroundColor: "white",
+        backgroundColor,
         fontSize: 12,
         color: "black",
         marginTop: 6,
       }}
-      textColor="black"
+      textColor={textColor}
       label={label}
       mode="outlined"
       autoCapitalize="none"

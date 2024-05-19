@@ -1,11 +1,4 @@
-import {
-  Image,
-  Pressable,
-  ScrollView,
-  StyleSheet,
-  Text,
-  View,
-} from "react-native";
+import { Image, Pressable, ScrollView, StyleSheet } from "react-native";
 import React from "react";
 import { Button, TextInput } from "react-native-paper";
 import CustomInput from "@/components/form/customInput";
@@ -14,14 +7,16 @@ import { TouchableOpacity } from "react-native";
 import google from "@/assets/images/google.png";
 import facebook from "@/assets/images/facebook.png";
 import { router } from "expo-router";
+import { View } from "@/components/View";
+import { Text } from "@/components/Text";
 
 const Login = () => {
   return (
     <View className="w-full ">
       <View className=" h-40 bg-[#F7951C]"></View>
-      <View className="rounded-t-3xl h-screen bg-white absolute top-32 px-4 py-8 ">
+      <View className="rounded-t-3xl h-screen absolute top-32 px-4 py-8 ">
         <View className="flex flex-row justify-center py-4">
-          <Text className="text-black font-extrabold text-3xl">Supa</Text>
+          <Text className=" font-extrabold text-3xl">Supa</Text>
           <Text className="text-[#F7951C] font-extrabold text-3xl">Menu</Text>
         </View>
         <View>
@@ -32,7 +27,7 @@ const Login = () => {
             Sign In to continue
           </Text>
         </View>
-        <ScrollView className="" showsVerticalScrollIndicator={false}>
+        <View className="">
           <View className="py-4">
             <CustomInput
               left={<TextInput.Icon icon="mail" />}
@@ -86,7 +81,7 @@ const Login = () => {
               <Text className="text-[#F7951C]">Register</Text>
             </Pressable>
           </View>
-        </ScrollView>
+        </View>
       </View>
     </View>
   );

@@ -1,13 +1,20 @@
-import { Image, StyleSheet, Text, View } from "react-native";
+import { Image } from "react-native";
 import React from "react";
 import success from "@/assets/images/success.png";
 import { TouchableOpacity } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
 import CustomButton from "@/components/form/customButton";
+import { useGoBack } from "@/hooks/useGoback";
+import { View } from "@/components/View";
+import { Text } from "@/components/Text";
 const PaymentStatus = () => {
+  const goBack = useGoBack();
   return (
-    <View>
-      <View className="flex flex-row justify-center mt-[30%]">
+    <View className="h-screen">
+      <TouchableOpacity className="rounded-xl mt-14 px-6" onPress={goBack}>
+        <AntDesign name="left" size={24} color="#F7951C" />
+      </TouchableOpacity>
+      <View className="flex flex-row justify-center mt-[15%]">
         <Image source={success} className="h-64 w-64" />
       </View>
       <View className="px-4">
@@ -28,7 +35,7 @@ const PaymentStatus = () => {
         />
       </View>
       <View className="flex flex-row justify-center py-[20%]">
-        <Text className="text-black font-extrabold text-4xl">Supa</Text>
+        <Text className="font-extrabold text-4xl">Supa</Text>
         <Text className="text-[#F7951C] font-extrabold text-4xl">Menu</Text>
       </View>
     </View>

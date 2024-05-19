@@ -1,16 +1,18 @@
-import { Pressable, StyleSheet, Text, View } from "react-native";
+import { Pressable, StyleSheet } from "react-native";
 import React from "react";
 import { Button, TextInput } from "react-native-paper";
 import CustomInput from "@/components/form/customInput";
 import CustomButton from "@/components/form/customButton";
+import { View } from "@/components/View";
+import { Text } from "@/components/Text";
 
 const Signup = () => {
   return (
     <View className="w-full ">
       <View className=" h-40 bg-[#F7951C]"></View>
-      <View className="rounded-t-3xl bg-white absolute top-32 px-4 py-8 ">
+      <View className="rounded-t-3xl absolute top-32 px-4 py-8 ">
         <View className="flex flex-row justify-center py-4">
-          <Text className="text-black font-extrabold text-3xl">Supa</Text>
+          <Text className="font-extrabold text-3xl">Supa</Text>
           <Text className="text-[#F7951C] font-extrabold text-3xl">Menu</Text>
         </View>
         <View>

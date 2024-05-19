@@ -1,14 +1,29 @@
-import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Image, TouchableOpacity } from "react-native";
 import React from "react";
 import order from "@/assets/images/order.png";
 import call from "@/assets/images/call.png";
 import AntDesign from "@expo/vector-icons/AntDesign";
 import { router } from "expo-router";
+import { View } from "@/components/View";
+import { Text } from "@/components/Text";
+import { useGoBack } from "@/hooks/useGoback";
+import { useThemeColor } from "@/hooks/useThemeColor";
 
 const StockDetails = () => {
   const foodType = ["Appetizer", "Starter", "Main", "Dessert", "Drink"];
+  const goBack = useGoBack();
+  const color = useThemeColor(
+    {
+      light: "#000",
+      dark: "#fff",
+    },
+    "text"
+  );
   return (
-    <View>
+    <View className="px-4 h-screen">
+      <TouchableOpacity onPress={goBack} className="mt-14">
+        <AntDesign name="left" size={24} color="#F7951C" />
+      </TouchableOpacity>
       <Text className="text-[#F7951C] font-bold text-lg text-center py-16">
         Choose Kigali
       </Text>
@@ -41,7 +56,7 @@ const StockDetails = () => {
             }}
           >
             <Text className="text-md">{item}</Text>
-            <AntDesign name="right" size={20} color="" />
+            <AntDesign name="right" size={20} color={color} />
           </TouchableOpacity>
         ))}
       </View>
