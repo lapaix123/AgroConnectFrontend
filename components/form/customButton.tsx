@@ -21,7 +21,7 @@ export default function CustomButton({
       mode="contained"
       onPress={() => router.push(href)}
       style={{
-        backgroundColor: "#F7951C",
+        backgroundColor: "#026338",
         justifyContent: "center",
         height: 54,
       }}

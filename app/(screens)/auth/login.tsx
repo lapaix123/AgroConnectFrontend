@@ -13,11 +13,11 @@ import { Text } from "@/components/Text";
 const Login = () => {
   return (
     <View className="w-full ">
-      <View className=" h-40 bg-[#F7951C]"></View>
+      <View className=" h-40 bg-[#026338]"></View>
       <View className="rounded-t-3xl h-screen absolute top-32 px-4 py-8 ">
         <View className="flex flex-row justify-center py-4">
-          <Text className=" font-extrabold text-3xl">Supa</Text>
-          <Text className="text-[#F7951C] font-extrabold text-3xl">Menu</Text>
+          <Text className=" font-extrabold text-3xl">Agri</Text>
+          <Text className="text-[#026338] font-extrabold text-3xl">Connect</Text>
         </View>
         <View>
           <Text className="text-[#0e244e9e] font-bold text-lg text-center">
@@ -53,7 +53,7 @@ const Login = () => {
             >
               <View className="flex flex-row justify-center gap-2 bg-transparent">
                 <Image source={google} style={{ height: 20, width: 20 }} />
-                <Text className="text-center text-[#626262">
+                <Text className="text-center text-[#026338">
                   Login with Google
                 </Text>
               </View>
@@ -73,12 +73,12 @@ const Login = () => {
             </TouchableOpacity>
           </View>
           <View>
-            <Text className="text-[#F7951C] text-center">Forgot password?</Text>
+            <Text className="text-[#026338] text-center">Forgot password?</Text>
           </View>
           <View className="flex flex-row py-4 justify-center">
             <Text>Don't have account?</Text>
             <Pressable onPress={() => router.push("/(screens)/auth/signup")}>
-              <Text className="text-[#F7951C]">Register</Text>
+              <Text className="text-[#026338]">Register</Text>
             </Pressable>
           </View>
         </View>

@@ -13,5 +13,5 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
-  ]
+, "app/(screens)/mainLayout/foodDetails.js", "app/(tabs)/message.js", "app/(tabs)/search.js", "app/(tabs)/addPost.js", "app/(tabs)/index.js", "app/(tabs)/Profile.js", "app/(screens)/mainLayout/home.js", "app/(screens)/mainLayout/stock.js", "app/(screens)/mainLayout/stockDetails.jsx", "app/(screens)/auth/signup.tsx"  ]
 }
